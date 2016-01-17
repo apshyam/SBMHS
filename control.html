@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Control</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="js/index.js"></script>-->
+</head>
+<body class="container-fluid"><br>
+<div class="col-md-6">
+<div class="panel panel-info">
+    <div class="panel-heading">Heater 1</div>
+    <div class="panel-body">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="settemp1" class="col-sm-3 control-label">Setpoint Temperature:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="settemp1" placeholder="Setpoint Temperature (in celsius scale)">
+        </div>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="pwm1" class="col-sm-3 control-label">PWM</label>
+        <div class="col-sm-9">
+          <input class="form-control" id="pwm1" placeholder="PWM">
+        </div>
+      </div> -->
+
+      <div class="panel panel-success">
+          <div class="panel-heading">PID Values</div>
+          <div class="panel-body">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="kp1" class="col-sm-3 control-label">Kp:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kp1" placeholder="Proportional Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ki1" class="col-sm-3 control-label">Ki:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="ki1" placeholder="Integral Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="kd1" class="col-sm-3 control-label">Kd:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kd1" placeholder="Differential Coefficient">
+                    </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </form>
+    </div>
+</div>
+</div>
+<div class="col-md-6">
+    <div class="panel panel-info">
+    <div class="panel-heading">Heater 2</div>
+    <div class="panel-body">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="settemp2" class="col-sm-3 control-label">Setpoint Temperature:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="settemp2" placeholder="Setpoint Temperature (in celsius scale)">
+        </div>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="pwm2" class="col-sm-3 control-label">PWM</label>
+        <div class="col-sm-9">
+          <input class="form-control" id="pwm2" placeholder="PWM">
+        </div>
+      </div> -->
+
+      <div class="panel panel-success">
+          <div class="panel-heading">PID Values</div>
+          <div class="panel-body">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="kp2" class="col-sm-3 control-label">Kp:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kp2" placeholder="Proportional Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ki2" class="col-sm-3 control-label">Ki:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="ki2" placeholder="Integral Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="kd2" class="col-sm-3 control-label">Kd:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kd2" placeholder="Differential Coefficient">
+                    </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </form>
+    </div>
+</div>
+</div>
+<div class="col-md-6">
+    <div class="panel panel-info">
+    <div class="panel-heading">Heater 3</div>
+    <div class="panel-body">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="settemp3" class="col-sm-3 control-label">Setpoint Temperature:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="settemp3" placeholder="Setpoint Temperature (in celsius scale)">
+        </div>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="pwm3" class="col-sm-3 control-label">PWM</label>
+        <div class="col-sm-9">
+          <input class="form-control" id="pwm3" placeholder="PWM">
+        </div>
+      </div> -->
+
+      <div class="panel panel-success">
+          <div class="panel-heading">PID Values</div>
+          <div class="panel-body">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="kp3" class="col-sm-3 control-label">Kp:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kp3" placeholder="Proportional Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ki3" class="col-sm-3 control-label">Ki:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="ki3" placeholder="Integral Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="kd3" class="col-sm-3 control-label">Kd:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kd3" placeholder="Differential Coefficient">
+                    </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </form>
+    </div>
+</div>
+</div>
+<div class="col-md-6">
+    <div class="panel panel-info">
+    <div class="panel-heading">Heater 4</div>
+    <div class="panel-body">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="settemp4" class="col-sm-3 control-label">Setpoint Temperature:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="settemp4" placeholder="Setpoint Temperature (in celsius scale)">
+        </div>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="pwm4" class="col-sm-3 control-label">PWM</label>
+        <div class="col-sm-9">
+          <input class="form-control" id="pwm4" placeholder="PWM">
+        </div>
+      </div> -->
+
+      <div class="panel panel-success">
+          <div class="panel-heading">PID Values</div>
+          <div class="panel-body">
+              <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="kp4" class="col-sm-3 control-label">Kp:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kp4" placeholder="Proportional Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ki4" class="col-sm-3 control-label">Ki:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="ki4" placeholder="Integral Coefficient">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="kd4" class="col-sm-3 control-label">Kd:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="kd4" placeholder="Differential Coefficient">
+                    </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </form>
+    </div>
+</div>
+</div>
+<button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+</body>
+<script type="text/javascript">
+    function submit(){
+        var dataobj = {
+            "T1": $('#settemp1').val(),
+            //"PWM1": $('#pwm1').val(),
+            "Kp1": $('#kp1').val(),
+            "Ki1": $('#ki1').val(),
+            "Kd1": $('#kd1').val(),
+            "T2": $('#settemp2').val(),
+            //"PWM2": $('#pwm2').val(),
+            "Kp2": $('#kp2').val(),
+            "Ki2": $('#ki2').val(),
+            "Kd2": $('#kd2').val(),
+            "T3": $('#settemp3').val(),
+            //"PWM3": $('#pwm3').val(),
+            "Kp3": $('#kp3').val(),
+            "Ki3": $('#ki3').val(),
+            "Kd3": $('#kd3').val(),
+            "T4": $('#settemp4').val(),
+            //"PWM4": $('#pwm4').val(),
+            "Kp4": $('#kp4').val(),
+            "Ki4": $('#ki4').val(),
+            "Kd4": $('#kd4').val()
+        };
+        console.log('in f')
+        $.post('/SBMHS/php/inidata.php', dataobj, function (dataobj, status){
+            console.log("Success");
+            location.href = "graph.html";
+        });
+    }
+</script>
+</html>

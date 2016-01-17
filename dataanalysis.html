@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analyse Data</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body class="container-fluid"><br><br><br>
+<div class="col-md-6 col-md-offset-3 text-center">
+    <button type="button" class="btn btn-primary" onclick="genxls()">Generate .xls File</button>
+</div>
+
+</body>
+<script type="text/javascript">
+    function genxls(){
+        location.href = "php/export.php"
+    }
+</script>
+</html>
